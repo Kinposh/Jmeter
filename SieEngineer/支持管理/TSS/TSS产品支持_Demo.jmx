@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="TSS产品支持流程">
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义变量">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="Frank_Shen_Token" elementType="Argument">
+            <stringProp name="Argument.name">Frank_Shen_Token</stringProp>
+            <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiJjODYyY2U4YmMwYzBmZjY2NDcxNDkxYmMyNzgwNmZiYzJQSzNCSkxZc3hqIiwidXNlcl9uYW1lIjoiUjIwMjQwMzI5ZjEyNjQ4NzhiOGU4ZDNmOSIsImV4dGVybmFsX2lkIjoiNTEzNTgyNjUzNzY3NjQ3MzkzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9FTkRfVVNFUiJdLCJjbGllbnRfaWQiOiJjODMwYzc3ZjI4ZDVlNTBmZmQ4NmNmM2FlZmQxNDY0OU5SRGg4dEtPaFJpIiwiYXVkIjpbImFwcF9hcGlfcmVzb3VyY2UiLCJiZmZfYXBpX3Jlc291cmNlIl0sInVzZXJfdHlwZSI6ImRlZmF1bHQiLCJhY2NvdW50X2lkIjoiMWVjMWJmMjg1YmVjYmRjMGVhZmUwZTI1YWZjMDZhYTE4MENkeDJQdmUwQyIsInVzZXJfaWQiOiJhNzg4YTg3ZjIwMDA4ZmQ5MzMzNDhmY2YyYThjYmMyYVFBNHI2bVBHaWJWIiwiZ3JhbnRfdHlwZSI6ImF1dGhvcml6YXRpb25fY29kZSIsInNjb3BlIjpbImFkZHJlc3MiLCJ1c2VyOmNpYW06dXBkYXRlcHdkIiwib3BlbmlkIiwicHJvZmlsZSIsInVzZXI6Y2lhbTplbWFpbHdyaXRlIiwidXNlcjpjaWFtOmV4dGVuZHdyaXRlIiwidXNlcjpjaWFtOmNvbW1vbmFwaSIsInVzZXI6Y2lhbTpleHRlbmRyZWFkIiwidXNlcjpjaWFtOnBob25ld3JpdGUiXSwiZXhwIjoxNzE4MzMxMTMzLCJhdXRoVHlwZSI6IkxPR0lOX1VTRVJfUEFTU1dPUkQiLCJqdGkiOiI1NjVmOTVkNC1iMzA1LTRjY2QtOGE2NS1mOGU2ZjM2NDM2YjUiLCJhcHBsaWNhdGlvbk5hbWUiOiJESSBTaWVFbmdpbmVlciBRQSJ9.HNp-1S_qgHK-_qfU3pqY7PBeZa1omxXuJtJOUnmK8raKBh8SdbpJ8XyvCG6mg3stYHzUtJbjfeiikIxGjUao73MCBt5zmiTxLSJBfCWcwJ0wkCl86pRhb6X5mMGIoJqekf7UwL3J3kTvGwWV_C3fO_lzmETvgF73xoNwjSmS7z1Uamleuu39E0OlG3Ns_Ug9MYd3iFOd9TYbG0Vd6WgV79v8cKsn2ilg2xVAdQcTuS_M16PKQlLg3NpNfu40ZqEP0hdM0WnSUT4owCMUFwOb7sEASau8vQ1BcxGov5EbybaxlxQnYHi6siTzzs9Z0Qmcu5h48Ta_mfrVqQzXKIjH9Q</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Kinposh_Token" elementType="Argument">
+            <stringProp name="Argument.name">Kinposh_Token</stringProp>
+            <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiIzYTgzMDgxNzhlMTFjYzg0YjhiZDZhM2I2ZGU2ODdmOThYRDM3ek02NEYxIiwidXNlcl9uYW1lIjoiUjIwMjQwNDAxYzVjN2E3NmZmMDQ2YzljNSIsImV4dGVybmFsX2lkIjoiMTM4ODU5MDQ1MTE0MjQ1ODgwNSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRU5EX1VTRVIiXSwiY2xpZW50X2lkIjoiYzgzMGM3N2YyOGQ1ZTUwZmZkODZjZjNhZWZkMTQ2NDlOUkRoOHRLT2hSaSIsImF1ZCI6WyJhcHBfYXBpX3Jlc291cmNlIiwiYmZmX2FwaV9yZXNvdXJjZSJdLCJ1c2VyX3R5cGUiOiJkZWZhdWx0IiwiYWNjb3VudF9pZCI6ImE4OTAyMWM2Mzg5MjBhMzE1MjU4YjAwMjJhNmQ1ZjBlMHk0QXdLWFVVeFciLCJ1c2VyX2lkIjoiYzE2MGU5ZDI4NDYyZDg0NWE2NWEzODM0NzgyMTZlMTVoMjBZRFVqcERjSyIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJzY29wZSI6WyJhZGRyZXNzIiwidXNlcjpjaWFtOnVwZGF0ZXB3ZCIsIm9wZW5pZCIsInByb2ZpbGUiLCJ1c2VyOmNpYW06ZW1haWx3cml0ZSIsInVzZXI6Y2lhbTpleHRlbmR3cml0ZSIsInVzZXI6Y2lhbTpjb21tb25hcGkiLCJ1c2VyOmNpYW06ZXh0ZW5kcmVhZCIsInVzZXI6Y2lhbTpwaG9uZXdyaXRlIl0sImV4cCI6MTcxODMzMTI0MCwiYXV0aFR5cGUiOiJMT0dJTl9VU0VSX1BBU1NXT1JEIiwianRpIjoiZGI2MGRlODgtMjgxYi00ZTliLThlZmQtNDZhMjZhOWFhZGE5IiwiYXBwbGljYXRpb25OYW1lIjoiREkgU2llRW5naW5lZXIgUUEifQ.VWs_WMUG42gMq9qqwEIiXQ0c7vsjZfFql9DFgVxhewwddj3yl3al5a4HuvWVAPjP6I60IU6gFky7iD-jMyGRgqA5jZ51inVUFCXB3xmp6tYEi3wZVS-vKsQ5M5Fb3D1YPys8KhE-8Kov0FghY9CuZpUfIjT-VnLIxhunOch-C9uohUAtfc5ie-sWopIY13RY9w4m4y0znEqyNUzjc6m65TYt2iEPx0mRbBwd_v5RkkcmBawTCDYaO-tNzTxjJssTzMdo_7dXuddBcPV1GnKD8dAImXCCRWrlKlIvL_1132S1WD6HTp4-onve2EIeWB_s4Ta57_tM3HcNaB1mJUqjJQ</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Shen_Jun_Token" elementType="Argument">
+            <stringProp name="Argument.name">Shen_Jun_Token</stringProp>
+            <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiI5ZWQ2NGY1MGVmMDEzZmJkOGIxOWJiYTQ0OTJmZGJiMEJ3VnFJbmM2MWJIIiwidXNlcl9uYW1lIjoiUjIwMjQwMzI5YTE2NjczNzExZDM0Nzg1NiIsImV4dGVybmFsX2lkIjoiNTI5MDg2MTUxNzc0NjQwODI0NyIsImF1dGhvcml0aWVzIjpbIlJPTEVfRU5EX1VTRVIiXSwiY2xpZW50X2lkIjoiYzgzMGM3N2YyOGQ1ZTUwZmZkODZjZjNhZWZkMTQ2NDlOUkRoOHRLT2hSaSIsImF1ZCI6WyJhcHBfYXBpX3Jlc291cmNlIiwiYmZmX2FwaV9yZXNvdXJjZSJdLCJ1c2VyX3R5cGUiOiJkZWZhdWx0IiwiYWNjb3VudF9pZCI6IjlkODRlMTIzY2Y1YmM5ZWYwOTQ3NTJhZGQ5N2ZmMjNlVTdUNThwMzZwN1AiLCJ1c2VyX2lkIjoiZmM0YTNkODVlYjQ5ZDIxNzk3YjA2YTNiYzc3ZDc1ZmM2UUlGUHVMdjJ0MiIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJzY29wZSI6WyJhZGRyZXNzIiwidXNlcjpjaWFtOnVwZGF0ZXB3ZCIsIm9wZW5pZCIsInByb2ZpbGUiLCJ1c2VyOmNpYW06ZW1haWx3cml0ZSIsInVzZXI6Y2lhbTpleHRlbmR3cml0ZSIsInVzZXI6Y2lhbTpjb21tb25hcGkiLCJ1c2VyOmNpYW06ZXh0ZW5kcmVhZCIsInVzZXI6Y2lhbTpwaG9uZXdyaXRlIl0sImV4cCI6MTcxODMzMTMxMywiYXV0aFR5cGUiOiJMT0dJTl9VU0VSX1BBU1NXT1JEIiwianRpIjoiMDk3MjZhYTUtMTU1MS00ZTZjLTk0NzItYmVjZjNkYzk4ZTYxIiwiYXBwbGljYXRpb25OYW1lIjoiREkgU2llRW5naW5lZXIgUUEifQ.N6lvMxDPccsgVE-6CmaZrA6gLsq7zPR9cG95_4UL35s5wdyxyQEibQ-ij8IKflAXY4vR99rM0BGCwCnSqRGRlHodxOtq8OpFpW2dtKl82SgVqwzd9PJRy_UyOhySFnAO9edFla0LdhgciW1bkYCvpVZPkxlZ5nj25E9KjQL0_zrndpIa_ai4OUnB9esVRzFUO1Iza6Plw15uZcsOGRF4YO_9tGpr5S4k2AUSTVsiEpt3s9M8d66Hgbo8e8KaEQVaji80peFsGhTj274JLi7BzK9fRY7JfeEiXaBMLQvvHevvHtrcxglQHnDWSE5i1h4KHEprgOUBCCB8hEbVsTlWyg</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="debug_bill_number" elementType="Argument">
+            <stringProp name="Argument.name">debug_bill_number</stringProp>
+            <stringProp name="Argument.value">T-01-01-2024061300001</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Li_Xiang_Token" elementType="Argument">
+            <stringProp name="Argument.name">Li_Xiang_Token</stringProp>
+            <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImNjMzc5NzY1ZDgwNjI4NTRjODlmNmU1NTQ5YzJhYzc2ZXZ4N1M5UmlxajMifQ.eyJzdWIiOiI1NjA5ZDk3Njk1YThjYTkxNGZiZjc4ZmNiOGMxODAxN05TNWJZY2VFOWVqIiwidXNlcl9uYW1lIjoiUjIwMjQwMzE5NjcxZGVlMDMyYzZmMzAyOCIsImV4dGVybmFsX2lkIjoiWjAwNDhIRloiLCJjbGllbnRfaWQiOiJjYzM3OTc2NWQ4MDYyODU0Yzg5ZjZlNTU0OWMyYWM3NmV2eDdTOVJpcWozIiwiYXVkIjpbImFwcF9hcGlfcmVzb3VyY2UiLCJiZmZfYXBpX3Jlc291cmNlIl0sInVzZXJfdHlwZSI6ImRlZmF1bHQiLCJhY2NvdW50X2lkIjoiNzMzNTRmMTAyN2Q0MzVkMzU0NjRlNGE0OTQ2ZjFiYjJ3bHFqZ01ETEI3MCIsInVzZXJfaWQiOiI0OWYxNTYwNzM2OThmNmYzZTA1MTQ2NGZkYjllZTJmMVpNekNOZE9JT29SIiwiZ3JhbnRfdHlwZSI6ImF1dGhvcml6YXRpb25fY29kZSIsInNjb3BlIjpbImFkZHJlc3MiLCJ1c2VyOmNpYW06dXBkYXRlcHdkIiwib3BlbmlkIiwicHJvZmlsZSIsInVzZXI6Y2lhbTplbWFpbHdyaXRlIiwidXNlcjpjaWFtOmV4dGVuZHdyaXRlIiwidXNlcjpjaWFtOmNvbW1vbmFwaSIsInVzZXI6Y2lhbTpleHRlbmRyZWFkIiwidXNlcjpjaWFtOnBob25ld3JpdGUiXSwiZXhwIjoxNzE3MjI4Nzc1LCJhdXRoVHlwZSI6Im1pY3Jvc29mdF9lbnRyYV9pZCIsImp0aSI6ImJhNjQ1OTAwLWZmNzItNDViNC1iYzUxLTA4NTg4NTQwMTJjOCIsImFwcGxpY2F0aW9uTmFtZSI6bnVsbH0.EYKJE6hO5JoW0eE8KF85GyGs1e9i366pnnpvIaufxZ4GrES3rm0CkcXP9CCMAU9bpxZEl3KDuxhnlFSZ-2JD-WAYW-VjKKr_73a5yOC1xoUoOl1LcH0YD8a_3FvJA4oJXFGdZqnAc7L6WVcmQ2SU1KO9VZKqo-10TUkoV1ZObQxrl117Pf5QvfRLUdBnaunQR2Grxw294z3KPJpX8dHKgPbRfYoyrZgYO0AP08DHH7Tq8PzwXB0-ZRfOsEbDRMTQoGF3fMS5T5eY5P8Yd2Zyr-41itaQC1koVD57yMXW0Ctt1nFaT8VQROkWvErGKd1dOfOSQ4CgUbDFcS0Cbjc-BA</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Testcase_csv_filepath" elementType="Argument">
+            <stringProp name="Argument.name">Testcase_csv_filepath</stringProp>
+            <stringProp name="Argument.value">/Users/mac/Library/CloudStorage/OneDrive-NTTDATACHINA/Siemens/运维/API_Test_Data/API_Del_Cases.csv</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TSS产品支持流程">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">0</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="支持申请提交">
+          <stringProp name="HTTPSampler.domain">gateway-qa.diapp.siemens.com.cn</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/mobile/serviceBill/tssProdut/addNew</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;consumerNameCn&quot;: &quot;山东凯信重机有限公司&quot;,&#xd;
+    &quot;consumerNameEn&quot;: &quot;Shandong Hicredit Heavy Machinery Co. Ltd.&quot;,&#xd;
+    &quot;finnalConsumerName&quot;: &quot;山东凯信重机有限公司&quot;,&#xd;
+    &quot;description&quot;: &quot;设备改造&quot;,&#xd;
+    &quot;chanceName&quot;: &quot;OEM_潍坊凯信机械机床改造_@CS MC R2S1&quot;,&#xd;
+    &quot;chanceType&quot;: &quot;Project&quot;,&#xd;
+    &quot;title&quot;: &quot;API-TSS-PROD_${__time(YYYY-MM-dd-HH:mm:ss)}&quot;,&#xd;
+    &quot;requirementType&quot;: &quot;101&quot;,&#xd;
+    &quot;serviceWay&quot;: &quot;1&quot;,&#xd;
+    &quot;productNumberList&quot;: [&#xd;
+        {&#xd;
+            &quot;productId&quot;: &quot;186&quot;,&#xd;
+            &quot;productNumber&quot;: &quot;FA-FA Product-SIMATIC AX&quot;&#xd;
+        }&#xd;
+    ],&#xd;
+    &quot;address&quot;: &quot;山东省潍坊市奎文区穆响路新站公交站西100米&quot;,&#xd;
+    &quot;addressLocation&quot;: &quot;36.65804580859601,119.25355470090102&quot;,&#xd;
+    &quot;consumerProvince&quot;: &quot;山东省&quot;,&#xd;
+    &quot;consumerCity&quot;: &quot;潍坊市&quot;,&#xd;
+    &quot;consumerCounty&quot;: &quot;&quot;,&#xd;
+    &quot;totalBudgetCost&quot;: &quot;4943739&quot;,&#xd;
+    &quot;usedCost&quot;: &quot;37750&quot;,&#xd;
+    &quot;remainingCost&quot;: &quot;4905989&quot;,&#xd;
+    &quot;totalWorkingHours&quot;: &quot;15454&quot;,&#xd;
+    &quot;usedWorkingHours&quot;: &quot;85&quot;,&#xd;
+    &quot;remainingWorkingHours&quot;: &quot;15369&quot;,&#xd;
+    &quot;resourceType&quot;: &quot;0&quot;,&#xd;
+    &quot;payload&quot;: {},&#xd;
+    &quot;consumerNumber&quot;: &quot;MA3C6JLJ7&quot;,&#xd;
+    &quot;industry&quot;: &quot;Machine Building&quot;,&#xd;
+    &quot;businessApplyBillChance&quot;: {},&#xd;
+    &quot;currentYearNums&quot;: &quot;1&quot;,&#xd;
+    &quot;currentYearTotalPrice&quot;: &quot;1000.00&quot;,&#xd;
+    &quot;futureYearTotalPrice&quot;: &quot;1000.00&quot;,&#xd;
+    &quot;futureYearNums&quot;: &quot;1&quot;,&#xd;
+    &quot;price&quot;: &quot;1000.00&quot;,&#xd;
+    &quot;pilotBuPriceDtoList&quot;: [&#xd;
+        {&#xd;
+            &quot;orderIntake&quot;: &quot;1000.00&quot;,&#xd;
+            &quot;bookingLineId&quot;: &quot;OPPT-00000086790L-R2S1&quot;,&#xd;
+            &quot;buSegment&quot;: &quot;CS MC&quot;,&#xd;
+            &quot;gckId&quot;: &quot;52&quot;,&#xd;
+            &quot;gck&quot;: &quot;R2S1&quot;,&#xd;
+            &quot;buid&quot;: &quot;4&quot;,&#xd;
+            &quot;bu&quot;: &quot;CS&quot;,&#xd;
+            &quot;buSegmentId&quot;: &quot;19&quot;,&#xd;
+            &quot;description&quot;: &quot;DI CS MC MTS Machine Tool Systems (数控系统服务)&quot;,&#xd;
+            &quot;isPrimaryFlag&quot;: true,&#xd;
+            &quot;weightedOrderIntake&quot;: &quot;150.00&quot;,&#xd;
+            &quot;depthStructure&quot;: &quot;CS | CS MC | R2S1 - DI CS MC MTS Machine Tool Systems (数控系统服务)&quot;&#xd;
+        }&#xd;
+    ],&#xd;
+    &quot;chanceId&quot;: &quot;OPPT-00000086790L&quot;,&#xd;
+    &quot;businessType&quot;: &quot;Product / System&quot;,&#xd;
+    &quot;machineTypeCode&quot;: &quot;MT000667I&quot;,&#xd;
+    &quot;mainCompetitor&quot;: &quot;&quot;,&#xd;
+    &quot;competitorFullName&quot;: &quot;&quot;,&#xd;
+    &quot;salesTerritory&quot;: &quot;S_Region North&quot;,&#xd;
+    &quot;salesBranch&quot;: &quot;T_Shandong East&quot;,&#xd;
+    &quot;salesOffice&quot;: &quot;O_Weifang&quot;,&#xd;
+    &quot;salesDepartment&quot;: &quot;OEM&quot;,&#xd;
+    &quot;salesDistrict&quot;: &quot;1E106814-Zhou Yong Bin&quot;,&#xd;
+    &quot;salesName&quot;: &quot;Zhou Yong Bin&quot;,&#xd;
+    &quot;isUsed&quot;: 0,&#xd;
+    &quot;businessLineType&quot;: &quot;TSS-NORMAL-PRODUCT&quot;,&#xd;
+    &quot;businessLine&quot;: &quot;TSS&quot;,&#xd;
+    &quot;mold&quot;: 1,&#xd;
+    &quot;technologyType&quot;: 1000,&#xd;
+    &quot;expectDate&quot;: &quot;${__time(yyyy-MM-dd)}&quot;,&#xd;
+    &quot;expectTime&quot;: &quot;AM&quot;,&#xd;
+    &quot;consumerLinkmanName&quot;: &quot;Frank&quot;,&#xd;
+    &quot;consumerLinkmanMobile&quot;: &quot;13671820995&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">${Frank_Shen_Token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="提取bill_number" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">bill_number</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.billNumber</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="提取assigner_gid" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">assigner_gid</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.data.activePerson</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="数据写入csv">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">//追加方式写入数据
+FileWriter fstream = new FileWriter(&quot;${Testcase_csv_filepath}&quot;,true);
+BufferedWriter out = new BufferedWriter(fstream);
+//out.write(vars.get(&quot;date&quot;)+&apos;,&apos;);//&quot;,&quot;为了提取多列数据时换列,
+out.write(vars.get(&quot;bill_number&quot;)+&quot;\n&quot;);
+out.close();
+fstream.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="工程师提交工时" enabled="false">
+          <stringProp name="HTTPSampler.domain">gateway-qa.diapp.siemens.com.cn</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/mobile/workTimeV1/worktime/addWorkTime</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;isService&quot;: 1,&#xd;
+    &quot;workTimes&quot;: [&#xd;
+        {&#xd;
+            &quot;billServiceNo&quot;: &quot;${debug_bill_number}&quot;,&#xd;
+            &quot;nTTime&quot;: 0.25,&#xd;
+            &quot;oTTimes&quot;: 0,&#xd;
+            &quot;travelTime&quot;: 0,&#xd;
+            &quot;workType&quot;: &quot;604&quot;,&#xd;
+            &quot;buList&quot;: [&#xd;
+                {&#xd;
+                    &quot;businessUnit&quot;: &quot;CS&quot;,&#xd;
+                    &quot;createTime&quot;: null,&#xd;
+                    &quot;id&quot;: null,&#xd;
+                    &quot;modifyTime&quot;: null,&#xd;
+                    &quot;percent&quot;: 0,&#xd;
+                    &quot;percentWorkTime&quot;: 2,&#xd;
+                    &quot;sheetId&quot;: null&#xd;
+                },&#xd;
+                {&#xd;
+                    &quot;businessUnit&quot;: &quot;FA&quot;,&#xd;
+                    &quot;createTime&quot;: null,&#xd;
+                    &quot;id&quot;: null,&#xd;
+                    &quot;modifyTime&quot;: null,&#xd;
+                    &quot;percent&quot;: 0,&#xd;
+                    &quot;percentWorkTime&quot;: 2,&#xd;
+                    &quot;sheetId&quot;: null&#xd;
+                },&#xd;
+                {&#xd;
+                    &quot;businessUnit&quot;: &quot;MC&quot;,&#xd;
+                    &quot;createTime&quot;: null,&#xd;
+                    &quot;id&quot;: null,&#xd;
+                    &quot;modifyTime&quot;: null,&#xd;
+                    &quot;percent&quot;: 0,&#xd;
+                    &quot;percentWorkTime&quot;: 2,&#xd;
+                    &quot;sheetId&quot;: null&#xd;
+                },&#xd;
+                {&#xd;
+                    &quot;businessUnit&quot;: &quot;Other&quot;,&#xd;
+                    &quot;createTime&quot;: null,&#xd;
+                    &quot;id&quot;: null,&#xd;
+                    &quot;modifyTime&quot;: null,&#xd;
+                    &quot;percent&quot;: 0,&#xd;
+                    &quot;percentWorkTime&quot;: 2,&#xd;
+                    &quot;sheetId&quot;: null&#xd;
+                },&#xd;
+                {&#xd;
+                    &quot;businessUnit&quot;: &quot;PA&quot;,&#xd;
+                    &quot;createTime&quot;: null,&#xd;
+                    &quot;id&quot;: null,&#xd;
+                    &quot;modifyTime&quot;: null,&#xd;
+                    &quot;percent&quot;: 100,&#xd;
+                    &quot;percentWorkTime&quot;: 2,&#xd;
+                    &quot;sheetId&quot;: null&#xd;
+                },&#xd;
+                {&#xd;
+                    &quot;businessUnit&quot;: &quot;SI EP-I&quot;,&#xd;
+                    &quot;createTime&quot;: null,&#xd;
+                    &quot;id&quot;: null,&#xd;
+                    &quot;modifyTime&quot;: null,&#xd;
+                    &quot;percent&quot;: 0,&#xd;
+                    &quot;percentWorkTime&quot;: 2,&#xd;
+                    &quot;sheetId&quot;: null&#xd;
+                }&#xd;
+            ],&#xd;
+            &quot;workStart&quot;: &quot;${__timeShift(yyyy-MM-dd HH:mm:00,,,,)}&quot;,&#xd;
+            &quot;workEnd&quot;: &quot;${__time(yyyy-MM-dd,)} ${__timeShift(HH:mm:00,,PT15M,,)}&quot;,&#xd;
+            &quot;workDesc&quot;: &quot;API自动测试填写&quot;&#xd;
+        }&#xd;
+    ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">${Shen_Jun_Token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON断言" enabled="true">
+            <stringProp name="JSON_PATH">$.code</stringProp>
+            <stringProp name="EXPECTED_VALUE">200</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="工时提交返回状态" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">time_sheet_sumbit_result</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.code</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TL强制关闭case" enabled="false">
+          <stringProp name="HTTPSampler.domain">gateway-qa.diapp.siemens.com.cn</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/mobile/serviceBill/finishBill</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;billNumber&quot;: &quot;${debug_bill_number}&quot;,&#xd;
+    &quot;consumerLinkmanName&quot;: &quot;Frank&quot;,&#xd;
+    &quot;consumerLinkmanMobile&quot;: &quot;13671820995&quot;,&#xd;
+    &quot;comment&quot;: &quot;API测试强制关闭&quot;,&#xd;
+    &quot;isManager&quot;: true&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">${Shen_Jun_Token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="关闭case成功">
+            <stringProp name="JSON_PATH">$.code</stringProp>
+            <stringProp name="EXPECTED_VALUE">200</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="关闭后校验case状态" enabled="false">
+          <stringProp name="HTTPSampler.domain">gateway-qa.diapp.siemens.com.cn</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/mobile/serviceBill/serviceBillDetail</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;billNumber&quot;: &quot;${debug_bill_number}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">${Shen_Jun_Token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Case状态=已关闭(80)">
+            <stringProp name="JSON_PATH">$.data.state</stringProp>
+            <stringProp name="EXPECTED_VALUE">80</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="调试取样器">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="删除测试数据">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="测试数据删除"/>
+        <hashTree>
+          <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While控制器">
+            <stringProp name="WhileController.condition"></stringProp>
+          </WhileController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="删除Case">
+              <stringProp name="HTTPSampler.domain">gateway-qa.diapp.siemens.com.cn</stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.path">/mobile/testData/remove</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
+    &quot;no&quot;: &quot;${bill_number}&quot;,&#xd;
+    &quot;type&quot;: 1&#xd;
+}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${Frank_Shen_Token}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置">
+                <stringProp name="delimiter">,</stringProp>
+                <stringProp name="fileEncoding">UTF-8</stringProp>
+                <stringProp name="filename">${Testcase_csv_filepath}</stringProp>
+                <boolProp name="ignoreFirstLine">false</boolProp>
+                <boolProp name="quotedData">false</boolProp>
+                <boolProp name="recycle">false</boolProp>
+                <stringProp name="shareMode">shareMode.all</stringProp>
+                <boolProp name="stopThread">true</boolProp>
+                <stringProp name="variableNames">bill_number</stringProp>
+              </CSVDataSet>
+              <hashTree/>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="提取申请人GID" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">applicant_gid</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.gid</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="清空csv文件">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">//清空文件
+FileWriter clrfstream=new FileWriter(&quot;${Testcase_csv_filepath}&quot;,false);
+BufferedWriter clrout=new BufferedWriter(clrfstream);
+clrout.write(&quot;&quot;);
+clrout.close();
+clrfstream.close();
+</stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="调试取样器">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="查看结果树">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="断言结果">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="汇总报告" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

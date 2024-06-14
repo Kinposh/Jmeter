@@ -8,7 +8,38 @@
       </elementProp>
     </TestPlan>
     <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义变量">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="Frank_Shen_Token" elementType="Argument">
+            <stringProp name="Argument.name">Frank_Shen_Token</stringProp>
+            <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiJjODYyY2U4YmMwYzBmZjY2NDcxNDkxYmMyNzgwNmZiYzJQSzNCSkxZc3hqIiwidXNlcl9uYW1lIjoiUjIwMjQwMzI5ZjEyNjQ4NzhiOGU4ZDNmOSIsImV4dGVybmFsX2lkIjoiNTEzNTgyNjUzNzY3NjQ3MzkzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9FTkRfVVNFUiJdLCJjbGllbnRfaWQiOiJjODMwYzc3ZjI4ZDVlNTBmZmQ4NmNmM2FlZmQxNDY0OU5SRGg4dEtPaFJpIiwiYXVkIjpbImFwcF9hcGlfcmVzb3VyY2UiLCJiZmZfYXBpX3Jlc291cmNlIl0sInVzZXJfdHlwZSI6ImRlZmF1bHQiLCJhY2NvdW50X2lkIjoiMWVjMWJmMjg1YmVjYmRjMGVhZmUwZTI1YWZjMDZhYTE4MENkeDJQdmUwQyIsInVzZXJfaWQiOiJhNzg4YTg3ZjIwMDA4ZmQ5MzMzNDhmY2YyYThjYmMyYVFBNHI2bVBHaWJWIiwiZ3JhbnRfdHlwZSI6ImF1dGhvcml6YXRpb25fY29kZSIsInNjb3BlIjpbImFkZHJlc3MiLCJ1c2VyOmNpYW06dXBkYXRlcHdkIiwib3BlbmlkIiwicHJvZmlsZSIsInVzZXI6Y2lhbTplbWFpbHdyaXRlIiwidXNlcjpjaWFtOmV4dGVuZHdyaXRlIiwidXNlcjpjaWFtOmNvbW1vbmFwaSIsInVzZXI6Y2lhbTpleHRlbmRyZWFkIiwidXNlcjpjaWFtOnBob25ld3JpdGUiXSwiZXhwIjoxNzE4MzMxMTMzLCJhdXRoVHlwZSI6IkxPR0lOX1VTRVJfUEFTU1dPUkQiLCJqdGkiOiI1NjVmOTVkNC1iMzA1LTRjY2QtOGE2NS1mOGU2ZjM2NDM2YjUiLCJhcHBsaWNhdGlvbk5hbWUiOiJESSBTaWVFbmdpbmVlciBRQSJ9.HNp-1S_qgHK-_qfU3pqY7PBeZa1omxXuJtJOUnmK8raKBh8SdbpJ8XyvCG6mg3stYHzUtJbjfeiikIxGjUao73MCBt5zmiTxLSJBfCWcwJ0wkCl86pRhb6X5mMGIoJqekf7UwL3J3kTvGwWV_C3fO_lzmETvgF73xoNwjSmS7z1Uamleuu39E0OlG3Ns_Ug9MYd3iFOd9TYbG0Vd6WgV79v8cKsn2ilg2xVAdQcTuS_M16PKQlLg3NpNfu40ZqEP0hdM0WnSUT4owCMUFwOb7sEASau8vQ1BcxGov5EbybaxlxQnYHi6siTzzs9Z0Qmcu5h48Ta_mfrVqQzXKIjH9Q</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Kinposh_Token" elementType="Argument">
+            <stringProp name="Argument.name">Kinposh_Token</stringProp>
+            <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiIzYTgzMDgxNzhlMTFjYzg0YjhiZDZhM2I2ZGU2ODdmOThYRDM3ek02NEYxIiwidXNlcl9uYW1lIjoiUjIwMjQwNDAxYzVjN2E3NmZmMDQ2YzljNSIsImV4dGVybmFsX2lkIjoiMTM4ODU5MDQ1MTE0MjQ1ODgwNSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRU5EX1VTRVIiXSwiY2xpZW50X2lkIjoiYzgzMGM3N2YyOGQ1ZTUwZmZkODZjZjNhZWZkMTQ2NDlOUkRoOHRLT2hSaSIsImF1ZCI6WyJhcHBfYXBpX3Jlc291cmNlIiwiYmZmX2FwaV9yZXNvdXJjZSJdLCJ1c2VyX3R5cGUiOiJkZWZhdWx0IiwiYWNjb3VudF9pZCI6ImE4OTAyMWM2Mzg5MjBhMzE1MjU4YjAwMjJhNmQ1ZjBlMHk0QXdLWFVVeFciLCJ1c2VyX2lkIjoiYzE2MGU5ZDI4NDYyZDg0NWE2NWEzODM0NzgyMTZlMTVoMjBZRFVqcERjSyIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJzY29wZSI6WyJhZGRyZXNzIiwidXNlcjpjaWFtOnVwZGF0ZXB3ZCIsIm9wZW5pZCIsInByb2ZpbGUiLCJ1c2VyOmNpYW06ZW1haWx3cml0ZSIsInVzZXI6Y2lhbTpleHRlbmR3cml0ZSIsInVzZXI6Y2lhbTpjb21tb25hcGkiLCJ1c2VyOmNpYW06ZXh0ZW5kcmVhZCIsInVzZXI6Y2lhbTpwaG9uZXdyaXRlIl0sImV4cCI6MTcxODMzMTI0MCwiYXV0aFR5cGUiOiJMT0dJTl9VU0VSX1BBU1NXT1JEIiwianRpIjoiZGI2MGRlODgtMjgxYi00ZTliLThlZmQtNDZhMjZhOWFhZGE5IiwiYXBwbGljYXRpb25OYW1lIjoiREkgU2llRW5naW5lZXIgUUEifQ.VWs_WMUG42gMq9qqwEIiXQ0c7vsjZfFql9DFgVxhewwddj3yl3al5a4HuvWVAPjP6I60IU6gFky7iD-jMyGRgqA5jZ51inVUFCXB3xmp6tYEi3wZVS-vKsQ5M5Fb3D1YPys8KhE-8Kov0FghY9CuZpUfIjT-VnLIxhunOch-C9uohUAtfc5ie-sWopIY13RY9w4m4y0znEqyNUzjc6m65TYt2iEPx0mRbBwd_v5RkkcmBawTCDYaO-tNzTxjJssTzMdo_7dXuddBcPV1GnKD8dAImXCCRWrlKlIvL_1132S1WD6HTp4-onve2EIeWB_s4Ta57_tM3HcNaB1mJUqjJQ</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Shen_Jun_Token" elementType="Argument">
+            <stringProp name="Argument.name">Shen_Jun_Token</stringProp>
+            <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiI5ZWQ2NGY1MGVmMDEzZmJkOGIxOWJiYTQ0OTJmZGJiMEJ3VnFJbmM2MWJIIiwidXNlcl9uYW1lIjoiUjIwMjQwMzI5YTE2NjczNzExZDM0Nzg1NiIsImV4dGVybmFsX2lkIjoiNTI5MDg2MTUxNzc0NjQwODI0NyIsImF1dGhvcml0aWVzIjpbIlJPTEVfRU5EX1VTRVIiXSwiY2xpZW50X2lkIjoiYzgzMGM3N2YyOGQ1ZTUwZmZkODZjZjNhZWZkMTQ2NDlOUkRoOHRLT2hSaSIsImF1ZCI6WyJhcHBfYXBpX3Jlc291cmNlIiwiYmZmX2FwaV9yZXNvdXJjZSJdLCJ1c2VyX3R5cGUiOiJkZWZhdWx0IiwiYWNjb3VudF9pZCI6IjlkODRlMTIzY2Y1YmM5ZWYwOTQ3NTJhZGQ5N2ZmMjNlVTdUNThwMzZwN1AiLCJ1c2VyX2lkIjoiZmM0YTNkODVlYjQ5ZDIxNzk3YjA2YTNiYzc3ZDc1ZmM2UUlGUHVMdjJ0MiIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJzY29wZSI6WyJhZGRyZXNzIiwidXNlcjpjaWFtOnVwZGF0ZXB3ZCIsIm9wZW5pZCIsInByb2ZpbGUiLCJ1c2VyOmNpYW06ZW1haWx3cml0ZSIsInVzZXI6Y2lhbTpleHRlbmR3cml0ZSIsInVzZXI6Y2lhbTpjb21tb25hcGkiLCJ1c2VyOmNpYW06ZXh0ZW5kcmVhZCIsInVzZXI6Y2lhbTpwaG9uZXdyaXRlIl0sImV4cCI6MTcxODMzMTMxMywiYXV0aFR5cGUiOiJMT0dJTl9VU0VSX1BBU1NXT1JEIiwianRpIjoiMDk3MjZhYTUtMTU1MS00ZTZjLTk0NzItYmVjZjNkYzk4ZTYxIiwiYXBwbGljYXRpb25OYW1lIjoiREkgU2llRW5naW5lZXIgUUEifQ.N6lvMxDPccsgVE-6CmaZrA6gLsq7zPR9cG95_4UL35s5wdyxyQEibQ-ij8IKflAXY4vR99rM0BGCwCnSqRGRlHodxOtq8OpFpW2dtKl82SgVqwzd9PJRy_UyOhySFnAO9edFla0LdhgciW1bkYCvpVZPkxlZ5nj25E9KjQL0_zrndpIa_ai4OUnB9esVRzFUO1Iza6Plw15uZcsOGRF4YO_9tGpr5S4k2AUSTVsiEpt3s9M8d66Hgbo8e8KaEQVaji80peFsGhTj274JLi7BzK9fRY7JfeEiXaBMLQvvHevvHtrcxglQHnDWSE5i1h4KHEprgOUBCCB8hEbVsTlWyg</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Li_Xiang_Token" elementType="Argument">
+            <stringProp name="Argument.name">Li_Xiang_Token</stringProp>
+            <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImNjMzc5NzY1ZDgwNjI4NTRjODlmNmU1NTQ5YzJhYzc2ZXZ4N1M5UmlxajMifQ.eyJzdWIiOiI1NjA5ZDk3Njk1YThjYTkxNGZiZjc4ZmNiOGMxODAxN05TNWJZY2VFOWVqIiwidXNlcl9uYW1lIjoiUjIwMjQwMzE5NjcxZGVlMDMyYzZmMzAyOCIsImV4dGVybmFsX2lkIjoiWjAwNDhIRloiLCJjbGllbnRfaWQiOiJjYzM3OTc2NWQ4MDYyODU0Yzg5ZjZlNTU0OWMyYWM3NmV2eDdTOVJpcWozIiwiYXVkIjpbImFwcF9hcGlfcmVzb3VyY2UiLCJiZmZfYXBpX3Jlc291cmNlIl0sInVzZXJfdHlwZSI6ImRlZmF1bHQiLCJhY2NvdW50X2lkIjoiNzMzNTRmMTAyN2Q0MzVkMzU0NjRlNGE0OTQ2ZjFiYjJ3bHFqZ01ETEI3MCIsInVzZXJfaWQiOiI0OWYxNTYwNzM2OThmNmYzZTA1MTQ2NGZkYjllZTJmMVpNekNOZE9JT29SIiwiZ3JhbnRfdHlwZSI6ImF1dGhvcml6YXRpb25fY29kZSIsInNjb3BlIjpbImFkZHJlc3MiLCJ1c2VyOmNpYW06dXBkYXRlcHdkIiwib3BlbmlkIiwicHJvZmlsZSIsInVzZXI6Y2lhbTplbWFpbHdyaXRlIiwidXNlcjpjaWFtOmV4dGVuZHdyaXRlIiwidXNlcjpjaWFtOmNvbW1vbmFwaSIsInVzZXI6Y2lhbTpleHRlbmRyZWFkIiwidXNlcjpjaWFtOnBob25ld3JpdGUiXSwiZXhwIjoxNzE3MjI4Nzc1LCJhdXRoVHlwZSI6Im1pY3Jvc29mdF9lbnRyYV9pZCIsImp0aSI6ImJhNjQ1OTAwLWZmNzItNDViNC1iYzUxLTA4NTg4NTQwMTJjOCIsImFwcGxpY2F0aW9uTmFtZSI6bnVsbH0.EYKJE6hO5JoW0eE8KF85GyGs1e9i366pnnpvIaufxZ4GrES3rm0CkcXP9CCMAU9bpxZEl3KDuxhnlFSZ-2JD-WAYW-VjKKr_73a5yOC1xoUoOl1LcH0YD8a_3FvJA4oJXFGdZqnAc7L6WVcmQ2SU1KO9VZKqo-10TUkoV1ZObQxrl117Pf5QvfRLUdBnaunQR2Grxw294z3KPJpX8dHKgPbRfYoyrZgYO0AP08DHH7Tq8PzwXB0-ZRfOsEbDRMTQoGF3fMS5T5eY5P8Yd2Zyr-41itaQC1koVD57yMXW0Ctt1nFaT8VQROkWvErGKd1dOfOSQ4CgUbDFcS0Cbjc-BA</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Testcase_csv_filepath" elementType="Argument">
+            <stringProp name="Argument.name">Testcase_csv_filepath</stringProp>
+            <stringProp name="Argument.value">/Users/mac/Library/CloudStorage/OneDrive-NTTDATACHINA/Siemens/运维/API_Test_Data/API_Del_Cases.csv</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TSS产品支持流程">
+        <stringProp name="TestPlan.comments">注意：此测试用例不支持压力测试，仅支持功能测试。多线程压力测试会导致工时提交接口因提交同一时间工时而导致报错</stringProp>
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -19,41 +50,6 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义变量">
-          <collectionProp name="Arguments.arguments">
-            <elementProp name="Frank_Shen_Token" elementType="Argument">
-              <stringProp name="Argument.name">Frank_Shen_Token</stringProp>
-              <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiJjODYyY2U4YmMwYzBmZjY2NDcxNDkxYmMyNzgwNmZiYzJQSzNCSkxZc3hqIiwidXNlcl9uYW1lIjoiUjIwMjQwMzI5ZjEyNjQ4NzhiOGU4ZDNmOSIsImV4dGVybmFsX2lkIjoiNTEzNTgyNjUzNzY3NjQ3MzkzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9FTkRfVVNFUiJdLCJjbGllbnRfaWQiOiJjODMwYzc3ZjI4ZDVlNTBmZmQ4NmNmM2FlZmQxNDY0OU5SRGg4dEtPaFJpIiwiYXVkIjpbImFwcF9hcGlfcmVzb3VyY2UiLCJiZmZfYXBpX3Jlc291cmNlIl0sInVzZXJfdHlwZSI6ImRlZmF1bHQiLCJhY2NvdW50X2lkIjoiMWVjMWJmMjg1YmVjYmRjMGVhZmUwZTI1YWZjMDZhYTE4MENkeDJQdmUwQyIsInVzZXJfaWQiOiJhNzg4YTg3ZjIwMDA4ZmQ5MzMzNDhmY2YyYThjYmMyYVFBNHI2bVBHaWJWIiwiZ3JhbnRfdHlwZSI6ImF1dGhvcml6YXRpb25fY29kZSIsInNjb3BlIjpbImFkZHJlc3MiLCJ1c2VyOmNpYW06dXBkYXRlcHdkIiwib3BlbmlkIiwicHJvZmlsZSIsInVzZXI6Y2lhbTplbWFpbHdyaXRlIiwidXNlcjpjaWFtOmV4dGVuZHdyaXRlIiwidXNlcjpjaWFtOmNvbW1vbmFwaSIsInVzZXI6Y2lhbTpleHRlbmRyZWFkIiwidXNlcjpjaWFtOnBob25ld3JpdGUiXSwiZXhwIjoxNzE4MjU3NTUzLCJhdXRoVHlwZSI6IkxPR0lOX1VTRVJfUEFTU1dPUkQiLCJqdGkiOiJiNDAwZWNjMS03ZDZmLTQyNjQtYWFmYS01NWU4ODJlMzQ1NjkiLCJhcHBsaWNhdGlvbk5hbWUiOiJESSBTaWVFbmdpbmVlciBRQSJ9.NR4MbO9z0xshzXjqwOwbKDXKrSUvb0uVzIk5FmZAoi55UXjd_k4uv61mVD4x2tP5-_wCe9tg64CSf_Aglg1Hinizu5nir2zpmQ0XIQD3mwLR3cnPu6NDL78TbVdKkF9ZMYOa89yD0HLVIdtsqbxRlZ5tGDiKOWaAC4X2NfK85h9Qd1cSqlPU1mOyq6Hp9VZnfQZ8DkmMd5w6VaM3qeAio_r4BaV4sMB7fpXRbUPwH8eYu_TwxvdypQ7nvckgxwk5gLx5YHtKDBWScNPNcQjZtbNHfgxSZupdCoWKUJMmz49Q8W59GfjoBqNqr5bUzTiSBhTt97cpSCoznd7DoWNqKQ</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Kinposh_Token" elementType="Argument">
-              <stringProp name="Argument.name">Kinposh_Token</stringProp>
-              <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiIzYTgzMDgxNzhlMTFjYzg0YjhiZDZhM2I2ZGU2ODdmOThYRDM3ek02NEYxIiwidXNlcl9uYW1lIjoiUjIwMjQwNDAxYzVjN2E3NmZmMDQ2YzljNSIsImV4dGVybmFsX2lkIjoiMTM4ODU5MDQ1MTE0MjQ1ODgwNSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRU5EX1VTRVIiXSwiY2xpZW50X2lkIjoiYzgzMGM3N2YyOGQ1ZTUwZmZkODZjZjNhZWZkMTQ2NDlOUkRoOHRLT2hSaSIsImF1ZCI6WyJhcHBfYXBpX3Jlc291cmNlIiwiYmZmX2FwaV9yZXNvdXJjZSJdLCJ1c2VyX3R5cGUiOiJkZWZhdWx0IiwiYWNjb3VudF9pZCI6ImE4OTAyMWM2Mzg5MjBhMzE1MjU4YjAwMjJhNmQ1ZjBlMHk0QXdLWFVVeFciLCJ1c2VyX2lkIjoiYzE2MGU5ZDI4NDYyZDg0NWE2NWEzODM0NzgyMTZlMTVoMjBZRFVqcERjSyIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJzY29wZSI6WyJhZGRyZXNzIiwidXNlcjpjaWFtOnVwZGF0ZXB3ZCIsIm9wZW5pZCIsInByb2ZpbGUiLCJ1c2VyOmNpYW06ZW1haWx3cml0ZSIsInVzZXI6Y2lhbTpleHRlbmR3cml0ZSIsInVzZXI6Y2lhbTpjb21tb25hcGkiLCJ1c2VyOmNpYW06ZXh0ZW5kcmVhZCIsInVzZXI6Y2lhbTpwaG9uZXdyaXRlIl0sImV4cCI6MTcxODI1NzYzNiwiYXV0aFR5cGUiOiJMT0dJTl9VU0VSX1BBU1NXT1JEIiwianRpIjoiMTgyZWFiOWEtNWEyMS00ZjIzLTgyN2YtYTU2YjQ2MWZmYWEyIiwiYXBwbGljYXRpb25OYW1lIjoiREkgU2llRW5naW5lZXIgUUEifQ.eMl2uutu8e5HA5fQMaT9dT4hOtJ224oaY4kbDVFf8opMgM0RsumU_ySI0KuZXebcyFArG3Sp5wtYY8MIcGhknUShLVniypLu8yQx7o2rE19y1xnUESey9TC3xy2yUI2qZft5gAgVCTN4cvIdjUNwKq133tdNP7NvaKwMO_16la_sLobyowZUTmKb6Ad3o2JR5SdjU8bRONu193c6QuXotPapRDAChMkeG-eWndXkLwFnWDxHko4obhi3ha5TGNh9FIAbEoGW8DuxmGPrQEJMoOwZZ8DfJgzoZogx_jwafHFyxDX33en2iaHLAXeJZ-7W4UjSeJmVJOeOnbaKVXvCiQ</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Shen_Jun_Token" elementType="Argument">
-              <stringProp name="Argument.name">Shen_Jun_Token</stringProp>
-              <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiI5ZWQ2NGY1MGVmMDEzZmJkOGIxOWJiYTQ0OTJmZGJiMEJ3VnFJbmM2MWJIIiwidXNlcl9uYW1lIjoiUjIwMjQwMzI5YTE2NjczNzExZDM0Nzg1NiIsImV4dGVybmFsX2lkIjoiNTI5MDg2MTUxNzc0NjQwODI0NyIsImF1dGhvcml0aWVzIjpbIlJPTEVfRU5EX1VTRVIiXSwiY2xpZW50X2lkIjoiYzgzMGM3N2YyOGQ1ZTUwZmZkODZjZjNhZWZkMTQ2NDlOUkRoOHRLT2hSaSIsImF1ZCI6WyJhcHBfYXBpX3Jlc291cmNlIiwiYmZmX2FwaV9yZXNvdXJjZSJdLCJ1c2VyX3R5cGUiOiJkZWZhdWx0IiwiYWNjb3VudF9pZCI6IjlkODRlMTIzY2Y1YmM5ZWYwOTQ3NTJhZGQ5N2ZmMjNlVTdUNThwMzZwN1AiLCJ1c2VyX2lkIjoiZmM0YTNkODVlYjQ5ZDIxNzk3YjA2YTNiYzc3ZDc1ZmM2UUlGUHVMdjJ0MiIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJzY29wZSI6WyJhZGRyZXNzIiwidXNlcjpjaWFtOnVwZGF0ZXB3ZCIsIm9wZW5pZCIsInByb2ZpbGUiLCJ1c2VyOmNpYW06ZW1haWx3cml0ZSIsInVzZXI6Y2lhbTpleHRlbmR3cml0ZSIsInVzZXI6Y2lhbTpjb21tb25hcGkiLCJ1c2VyOmNpYW06ZXh0ZW5kcmVhZCIsInVzZXI6Y2lhbTpwaG9uZXdyaXRlIl0sImV4cCI6MTcxODI1NzcxNCwiYXV0aFR5cGUiOiJMT0dJTl9VU0VSX1BBU1NXT1JEIiwianRpIjoiODdhN2ZjMTMtYjc2ZC00OTQ4LWE1MWUtNTBkNDNkYzAwMjg3IiwiYXBwbGljYXRpb25OYW1lIjoiREkgU2llRW5naW5lZXIgUUEifQ.PES4Ck1DW4mKDSITH3XgROfUQlgQ-m5DdoA4h2muOt8Nm6ytUyPoM_KJUrI91VhnC9hivBeJvh_ON_Rb13n5S1DQSjyOteoj5Ayb7yeb6WfXoUpd9hs5c6utQp1-rTDd8e1a0b50P8SCx3-WuO_aWUNDSs8WhprEj67yDhQOrgNkUGaW8UumjWlEzyUsQzLFDbLEDWz7vT0x-Mhd5YGZ5mC2X7Wd4-6A24ZI_y1lg2rVp4rkdQeROigOHYHk3xFaJgHlkcnU9snSRxYxyY2bCLxVvKr0F1uPmd4YpsdlTZT-MFo82VuKODVXb3edJZeRY3m9Mayk_F1mb7qGLLqL-g</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="debug_bill_number" elementType="Argument">
-              <stringProp name="Argument.name">debug_bill_number</stringProp>
-              <stringProp name="Argument.value">T-01-01-2024061300001</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Li_Xiang_Token" elementType="Argument">
-              <stringProp name="Argument.name">Li_Xiang_Token</stringProp>
-              <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImNjMzc5NzY1ZDgwNjI4NTRjODlmNmU1NTQ5YzJhYzc2ZXZ4N1M5UmlxajMifQ.eyJzdWIiOiI1NjA5ZDk3Njk1YThjYTkxNGZiZjc4ZmNiOGMxODAxN05TNWJZY2VFOWVqIiwidXNlcl9uYW1lIjoiUjIwMjQwMzE5NjcxZGVlMDMyYzZmMzAyOCIsImV4dGVybmFsX2lkIjoiWjAwNDhIRloiLCJjbGllbnRfaWQiOiJjYzM3OTc2NWQ4MDYyODU0Yzg5ZjZlNTU0OWMyYWM3NmV2eDdTOVJpcWozIiwiYXVkIjpbImFwcF9hcGlfcmVzb3VyY2UiLCJiZmZfYXBpX3Jlc291cmNlIl0sInVzZXJfdHlwZSI6ImRlZmF1bHQiLCJhY2NvdW50X2lkIjoiNzMzNTRmMTAyN2Q0MzVkMzU0NjRlNGE0OTQ2ZjFiYjJ3bHFqZ01ETEI3MCIsInVzZXJfaWQiOiI0OWYxNTYwNzM2OThmNmYzZTA1MTQ2NGZkYjllZTJmMVpNekNOZE9JT29SIiwiZ3JhbnRfdHlwZSI6ImF1dGhvcml6YXRpb25fY29kZSIsInNjb3BlIjpbImFkZHJlc3MiLCJ1c2VyOmNpYW06dXBkYXRlcHdkIiwib3BlbmlkIiwicHJvZmlsZSIsInVzZXI6Y2lhbTplbWFpbHdyaXRlIiwidXNlcjpjaWFtOmV4dGVuZHdyaXRlIiwidXNlcjpjaWFtOmNvbW1vbmFwaSIsInVzZXI6Y2lhbTpleHRlbmRyZWFkIiwidXNlcjpjaWFtOnBob25ld3JpdGUiXSwiZXhwIjoxNzE3MjI4Nzc1LCJhdXRoVHlwZSI6Im1pY3Jvc29mdF9lbnRyYV9pZCIsImp0aSI6ImJhNjQ1OTAwLWZmNzItNDViNC1iYzUxLTA4NTg4NTQwMTJjOCIsImFwcGxpY2F0aW9uTmFtZSI6bnVsbH0.EYKJE6hO5JoW0eE8KF85GyGs1e9i366pnnpvIaufxZ4GrES3rm0CkcXP9CCMAU9bpxZEl3KDuxhnlFSZ-2JD-WAYW-VjKKr_73a5yOC1xoUoOl1LcH0YD8a_3FvJA4oJXFGdZqnAc7L6WVcmQ2SU1KO9VZKqo-10TUkoV1ZObQxrl117Pf5QvfRLUdBnaunQR2Grxw294z3KPJpX8dHKgPbRfYoyrZgYO0AP08DHH7Tq8PzwXB0-ZRfOsEbDRMTQoGF3fMS5T5eY5P8Yd2Zyr-41itaQC1koVD57yMXW0Ctt1nFaT8VQROkWvErGKd1dOfOSQ4CgUbDFcS0Cbjc-BA</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="Testcase_csv_filepath" elementType="Argument">
-              <stringProp name="Argument.name">Testcase_csv_filepath</stringProp>
-              <stringProp name="Argument.value">/Users/mac/Library/CloudStorage/OneDrive-NTTDATACHINA/Siemens/运维/API_Test_Data/API_Del_Cases.csv</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-          </collectionProp>
-        </Arguments>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="测试数据准备" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取申请人GID" enabled="true">
@@ -336,6 +332,19 @@
               <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.data.activePerson</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
+            <hashTree/>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="数据写入csv">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">//追加方式写入数据
+FileWriter fstream = new FileWriter(&quot;${Testcase_csv_filepath}&quot;,true);
+BufferedWriter out = new BufferedWriter(fstream);
+//out.write(vars.get(&quot;date&quot;)+&apos;,&apos;);//&quot;,&quot;为了提取多列数据时换列,
+out.write(vars.get(&quot;bill_number&quot;)+&quot;\n&quot;);
+out.close();
+fstream.close();</stringProp>
+            </BeanShellPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="验证团队成员包含申请人" enabled="true">
@@ -934,7 +943,7 @@ log.info(&quot;===========Debug Log===================&quot;);</stringProp>
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-    &quot;billNumber&quot;: &quot;${debug_bill_number}&quot;,&#xd;
+    &quot;billNumber&quot;: &quot;${bill_number}&quot;,&#xd;
     &quot;consumerLinkmanName&quot;: &quot;Frank&quot;,&#xd;
     &quot;consumerLinkmanMobile&quot;: &quot;13671820995&quot;,&#xd;
     &quot;comment&quot;: &quot;API测试强制关闭&quot;,&#xd;
@@ -969,7 +978,7 @@ log.info(&quot;===========Debug Log===================&quot;);</stringProp>
             </JSONPathAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="关闭后校验case状态" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="关闭后校验case状态">
             <stringProp name="HTTPSampler.domain">gateway-qa.diapp.siemens.com.cn</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <stringProp name="HTTPSampler.path">/mobile/serviceBill/serviceBillDetail</stringProp>
@@ -982,7 +991,7 @@ log.info(&quot;===========Debug Log===================&quot;);</stringProp>
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-    &quot;billNumber&quot;: &quot;${debug_bill_number}&quot;&#xd;
+    &quot;billNumber&quot;: &quot;${bill_number}&quot;&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -1021,54 +1030,19 @@ log.info(&quot;===========Debug Log===================&quot;);</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="删除支持管理测试case数据">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="删除支持管理测试case数据" enabled="false">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器">
-          <stringProp name="LoopController.loops">0</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="测试数据删除"/>
         <hashTree>
-          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义变量">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="Frank_Shen_Token" elementType="Argument">
-                <stringProp name="Argument.name">Frank_Shen_Token</stringProp>
-                <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiJjODYyY2U4YmMwYzBmZjY2NDcxNDkxYmMyNzgwNmZiYzJQSzNCSkxZc3hqIiwidXNlcl9uYW1lIjoiUjIwMjQwMzI5ZjEyNjQ4NzhiOGU4ZDNmOSIsImV4dGVybmFsX2lkIjoiNTEzNTgyNjUzNzY3NjQ3MzkzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9FTkRfVVNFUiJdLCJjbGllbnRfaWQiOiJjODMwYzc3ZjI4ZDVlNTBmZmQ4NmNmM2FlZmQxNDY0OU5SRGg4dEtPaFJpIiwiYXVkIjpbImFwcF9hcGlfcmVzb3VyY2UiLCJiZmZfYXBpX3Jlc291cmNlIl0sInVzZXJfdHlwZSI6ImRlZmF1bHQiLCJhY2NvdW50X2lkIjoiMWVjMWJmMjg1YmVjYmRjMGVhZmUwZTI1YWZjMDZhYTE4MENkeDJQdmUwQyIsInVzZXJfaWQiOiJhNzg4YTg3ZjIwMDA4ZmQ5MzMzNDhmY2YyYThjYmMyYVFBNHI2bVBHaWJWIiwiZ3JhbnRfdHlwZSI6ImF1dGhvcml6YXRpb25fY29kZSIsInNjb3BlIjpbImFkZHJlc3MiLCJ1c2VyOmNpYW06dXBkYXRlcHdkIiwib3BlbmlkIiwicHJvZmlsZSIsInVzZXI6Y2lhbTplbWFpbHdyaXRlIiwidXNlcjpjaWFtOmV4dGVuZHdyaXRlIiwidXNlcjpjaWFtOmNvbW1vbmFwaSIsInVzZXI6Y2lhbTpleHRlbmRyZWFkIiwidXNlcjpjaWFtOnBob25ld3JpdGUiXSwiZXhwIjoxNzE4MjU3NTUzLCJhdXRoVHlwZSI6IkxPR0lOX1VTRVJfUEFTU1dPUkQiLCJqdGkiOiJiNDAwZWNjMS03ZDZmLTQyNjQtYWFmYS01NWU4ODJlMzQ1NjkiLCJhcHBsaWNhdGlvbk5hbWUiOiJESSBTaWVFbmdpbmVlciBRQSJ9.NR4MbO9z0xshzXjqwOwbKDXKrSUvb0uVzIk5FmZAoi55UXjd_k4uv61mVD4x2tP5-_wCe9tg64CSf_Aglg1Hinizu5nir2zpmQ0XIQD3mwLR3cnPu6NDL78TbVdKkF9ZMYOa89yD0HLVIdtsqbxRlZ5tGDiKOWaAC4X2NfK85h9Qd1cSqlPU1mOyq6Hp9VZnfQZ8DkmMd5w6VaM3qeAio_r4BaV4sMB7fpXRbUPwH8eYu_TwxvdypQ7nvckgxwk5gLx5YHtKDBWScNPNcQjZtbNHfgxSZupdCoWKUJMmz49Q8W59GfjoBqNqr5bUzTiSBhTt97cpSCoznd7DoWNqKQ</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="Kinposh_Token" elementType="Argument">
-                <stringProp name="Argument.name">Kinposh_Token</stringProp>
-                <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiIzYTgzMDgxNzhlMTFjYzg0YjhiZDZhM2I2ZGU2ODdmOThYRDM3ek02NEYxIiwidXNlcl9uYW1lIjoiUjIwMjQwNDAxYzVjN2E3NmZmMDQ2YzljNSIsImV4dGVybmFsX2lkIjoiMTM4ODU5MDQ1MTE0MjQ1ODgwNSIsImF1dGhvcml0aWVzIjpbIlJPTEVfRU5EX1VTRVIiXSwiY2xpZW50X2lkIjoiYzgzMGM3N2YyOGQ1ZTUwZmZkODZjZjNhZWZkMTQ2NDlOUkRoOHRLT2hSaSIsImF1ZCI6WyJhcHBfYXBpX3Jlc291cmNlIiwiYmZmX2FwaV9yZXNvdXJjZSJdLCJ1c2VyX3R5cGUiOiJkZWZhdWx0IiwiYWNjb3VudF9pZCI6ImE4OTAyMWM2Mzg5MjBhMzE1MjU4YjAwMjJhNmQ1ZjBlMHk0QXdLWFVVeFciLCJ1c2VyX2lkIjoiYzE2MGU5ZDI4NDYyZDg0NWE2NWEzODM0NzgyMTZlMTVoMjBZRFVqcERjSyIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJzY29wZSI6WyJhZGRyZXNzIiwidXNlcjpjaWFtOnVwZGF0ZXB3ZCIsIm9wZW5pZCIsInByb2ZpbGUiLCJ1c2VyOmNpYW06ZW1haWx3cml0ZSIsInVzZXI6Y2lhbTpleHRlbmR3cml0ZSIsInVzZXI6Y2lhbTpjb21tb25hcGkiLCJ1c2VyOmNpYW06ZXh0ZW5kcmVhZCIsInVzZXI6Y2lhbTpwaG9uZXdyaXRlIl0sImV4cCI6MTcxODI1NzYzNiwiYXV0aFR5cGUiOiJMT0dJTl9VU0VSX1BBU1NXT1JEIiwianRpIjoiMTgyZWFiOWEtNWEyMS00ZjIzLTgyN2YtYTU2YjQ2MWZmYWEyIiwiYXBwbGljYXRpb25OYW1lIjoiREkgU2llRW5naW5lZXIgUUEifQ.eMl2uutu8e5HA5fQMaT9dT4hOtJ224oaY4kbDVFf8opMgM0RsumU_ySI0KuZXebcyFArG3Sp5wtYY8MIcGhknUShLVniypLu8yQx7o2rE19y1xnUESey9TC3xy2yUI2qZft5gAgVCTN4cvIdjUNwKq133tdNP7NvaKwMO_16la_sLobyowZUTmKb6Ad3o2JR5SdjU8bRONu193c6QuXotPapRDAChMkeG-eWndXkLwFnWDxHko4obhi3ha5TGNh9FIAbEoGW8DuxmGPrQEJMoOwZZ8DfJgzoZogx_jwafHFyxDX33en2iaHLAXeJZ-7W4UjSeJmVJOeOnbaKVXvCiQ</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="Shen_Jun_Token" elementType="Argument">
-                <stringProp name="Argument.name">Shen_Jun_Token</stringProp>
-                <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM4MzBjNzdmMjhkNWU1MGZmZDg2Y2YzYWVmZDE0NjQ5TlJEaDh0S09oUmkifQ.eyJzdWIiOiI5ZWQ2NGY1MGVmMDEzZmJkOGIxOWJiYTQ0OTJmZGJiMEJ3VnFJbmM2MWJIIiwidXNlcl9uYW1lIjoiUjIwMjQwMzI5YTE2NjczNzExZDM0Nzg1NiIsImV4dGVybmFsX2lkIjoiNTI5MDg2MTUxNzc0NjQwODI0NyIsImF1dGhvcml0aWVzIjpbIlJPTEVfRU5EX1VTRVIiXSwiY2xpZW50X2lkIjoiYzgzMGM3N2YyOGQ1ZTUwZmZkODZjZjNhZWZkMTQ2NDlOUkRoOHRLT2hSaSIsImF1ZCI6WyJhcHBfYXBpX3Jlc291cmNlIiwiYmZmX2FwaV9yZXNvdXJjZSJdLCJ1c2VyX3R5cGUiOiJkZWZhdWx0IiwiYWNjb3VudF9pZCI6IjlkODRlMTIzY2Y1YmM5ZWYwOTQ3NTJhZGQ5N2ZmMjNlVTdUNThwMzZwN1AiLCJ1c2VyX2lkIjoiZmM0YTNkODVlYjQ5ZDIxNzk3YjA2YTNiYzc3ZDc1ZmM2UUlGUHVMdjJ0MiIsImdyYW50X3R5cGUiOiJhdXRob3JpemF0aW9uX2NvZGUiLCJzY29wZSI6WyJhZGRyZXNzIiwidXNlcjpjaWFtOnVwZGF0ZXB3ZCIsIm9wZW5pZCIsInByb2ZpbGUiLCJ1c2VyOmNpYW06ZW1haWx3cml0ZSIsInVzZXI6Y2lhbTpleHRlbmR3cml0ZSIsInVzZXI6Y2lhbTpjb21tb25hcGkiLCJ1c2VyOmNpYW06ZXh0ZW5kcmVhZCIsInVzZXI6Y2lhbTpwaG9uZXdyaXRlIl0sImV4cCI6MTcxODI1NzcxNCwiYXV0aFR5cGUiOiJMT0dJTl9VU0VSX1BBU1NXT1JEIiwianRpIjoiODdhN2ZjMTMtYjc2ZC00OTQ4LWE1MWUtNTBkNDNkYzAwMjg3IiwiYXBwbGljYXRpb25OYW1lIjoiREkgU2llRW5naW5lZXIgUUEifQ.PES4Ck1DW4mKDSITH3XgROfUQlgQ-m5DdoA4h2muOt8Nm6ytUyPoM_KJUrI91VhnC9hivBeJvh_ON_Rb13n5S1DQSjyOteoj5Ayb7yeb6WfXoUpd9hs5c6utQp1-rTDd8e1a0b50P8SCx3-WuO_aWUNDSs8WhprEj67yDhQOrgNkUGaW8UumjWlEzyUsQzLFDbLEDWz7vT0x-Mhd5YGZ5mC2X7Wd4-6A24ZI_y1lg2rVp4rkdQeROigOHYHk3xFaJgHlkcnU9snSRxYxyY2bCLxVvKr0F1uPmd4YpsdlTZT-MFo82VuKODVXb3edJZeRY3m9Mayk_F1mb7qGLLqL-g</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="debug_bill_number" elementType="Argument">
-                <stringProp name="Argument.name">debug_bill_number</stringProp>
-                <stringProp name="Argument.value">T-01-01-2024061300001</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="Li_Xiang_Token" elementType="Argument">
-                <stringProp name="Argument.name">Li_Xiang_Token</stringProp>
-                <stringProp name="Argument.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImNjMzc5NzY1ZDgwNjI4NTRjODlmNmU1NTQ5YzJhYzc2ZXZ4N1M5UmlxajMifQ.eyJzdWIiOiI1NjA5ZDk3Njk1YThjYTkxNGZiZjc4ZmNiOGMxODAxN05TNWJZY2VFOWVqIiwidXNlcl9uYW1lIjoiUjIwMjQwMzE5NjcxZGVlMDMyYzZmMzAyOCIsImV4dGVybmFsX2lkIjoiWjAwNDhIRloiLCJjbGllbnRfaWQiOiJjYzM3OTc2NWQ4MDYyODU0Yzg5ZjZlNTU0OWMyYWM3NmV2eDdTOVJpcWozIiwiYXVkIjpbImFwcF9hcGlfcmVzb3VyY2UiLCJiZmZfYXBpX3Jlc291cmNlIl0sInVzZXJfdHlwZSI6ImRlZmF1bHQiLCJhY2NvdW50X2lkIjoiNzMzNTRmMTAyN2Q0MzVkMzU0NjRlNGE0OTQ2ZjFiYjJ3bHFqZ01ETEI3MCIsInVzZXJfaWQiOiI0OWYxNTYwNzM2OThmNmYzZTA1MTQ2NGZkYjllZTJmMVpNekNOZE9JT29SIiwiZ3JhbnRfdHlwZSI6ImF1dGhvcml6YXRpb25fY29kZSIsInNjb3BlIjpbImFkZHJlc3MiLCJ1c2VyOmNpYW06dXBkYXRlcHdkIiwib3BlbmlkIiwicHJvZmlsZSIsInVzZXI6Y2lhbTplbWFpbHdyaXRlIiwidXNlcjpjaWFtOmV4dGVuZHdyaXRlIiwidXNlcjpjaWFtOmNvbW1vbmFwaSIsInVzZXI6Y2lhbTpleHRlbmRyZWFkIiwidXNlcjpjaWFtOnBob25ld3JpdGUiXSwiZXhwIjoxNzE3MjI4Nzc1LCJhdXRoVHlwZSI6Im1pY3Jvc29mdF9lbnRyYV9pZCIsImp0aSI6ImJhNjQ1OTAwLWZmNzItNDViNC1iYzUxLTA4NTg4NTQwMTJjOCIsImFwcGxpY2F0aW9uTmFtZSI6bnVsbH0.EYKJE6hO5JoW0eE8KF85GyGs1e9i366pnnpvIaufxZ4GrES3rm0CkcXP9CCMAU9bpxZEl3KDuxhnlFSZ-2JD-WAYW-VjKKr_73a5yOC1xoUoOl1LcH0YD8a_3FvJA4oJXFGdZqnAc7L6WVcmQ2SU1KO9VZKqo-10TUkoV1ZObQxrl117Pf5QvfRLUdBnaunQR2Grxw294z3KPJpX8dHKgPbRfYoyrZgYO0AP08DHH7Tq8PzwXB0-ZRfOsEbDRMTQoGF3fMS5T5eY5P8Yd2Zyr-41itaQC1koVD57yMXW0Ctt1nFaT8VQROkWvErGKd1dOfOSQ4CgUbDFcS0Cbjc-BA</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="Testcase_csv_filepath" elementType="Argument">
-                <stringProp name="Argument.name">Testcase_csv_filepath</stringProp>
-                <stringProp name="Argument.value">/Users/mac/Library/CloudStorage/OneDrive-NTTDATACHINA/Siemens/运维/API_Test_Data/API_Del_Cases.csv</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </Arguments>
-          <hashTree/>
           <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While控制器">
             <stringProp name="WhileController.condition"></stringProp>
           </WhileController>
@@ -1217,7 +1191,7 @@ clrfstream.close();
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="汇总报告" enabled="true">
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="汇总报告">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
